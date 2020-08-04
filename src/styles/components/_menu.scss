@@ -1,0 +1,26 @@
+.menu {
+  padding: 35px 0;
+  color: $neutral700;
+  background-color: $white;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header__nav {
+
+    ul {
+      display: flex;
+    }
+    li {
+      cursor: pointer;
+      padding: 15px;
+
+      &:after {
+        border-bottom: 1px solid $green500;
+      }
+    }
+  }
+}

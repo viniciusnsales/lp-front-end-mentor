@@ -1,0 +1,45 @@
+@viewport {
+  width: device-width;
+}
+
+::selection {
+  background-color: $black;
+  color: $white;
+}
+
+body {
+  letter-spacing: 1px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+main {
+  overflow: hidden;
+}
+
+a,
+button {
+  transition: all ease .4s;
+}
+
+a[href^=tel],
+a[href^=email] {
+  color: inherit;
+  text-decoration: none;
+}
+
+textarea {
+  resize: none;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  li {
+    margin: 0;
+  }
+}

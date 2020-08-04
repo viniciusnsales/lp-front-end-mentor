@@ -1,0 +1,67 @@
+.form {
+  .form__label {
+    color: $neutral700;
+  }
+
+  .form-group {
+    position: relative;
+
+    &.form-group--floating {
+      .form__label {
+        position: absolute;
+        top: 0;
+        left: 1rem;
+        padding: 9px 2px 0 2px;
+        transition: all 200ms;
+      }
+
+      .form-control {
+        &:focus + .form__label,
+        &:not(:placeholder-shown) + .form__label {
+          font-size: 75%;
+          padding: 0 2px;
+          transform: translate3d(0, -50%, 0);
+          background-color: $neutral0;
+        }
+      }
+    }
+
+    &[class^="icon"],
+    &[class*=" icon"] {
+      &.form-group--floating {
+        .form__label {
+          padding: 9px 2px 0 20px;
+        }
+
+        .form-control {
+          &:focus + .form__label,
+          &:not(:placeholder-shown) + .form__label {
+            left: .6rem;
+            padding: 9px 2px 0 2px;
+          }
+        }
+      }
+
+      &:before,
+      &:after {
+        position: absolute;
+        text-align: center;
+        top: 0;
+        left: 8px;
+        z-index: 10;
+        width: 24px;
+        height: 42px;
+        line-height: 42px;
+        color: $blue500;
+      }
+
+      .form-control {
+        padding-left: 38px;
+      }
+
+      .custom-select {
+        padding-left: 36px;
+      }
+    }
+  }
+}

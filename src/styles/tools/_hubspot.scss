@@ -1,0 +1,6 @@
+$hubspotURL: "https://cdn2.hubspot.net/hubfs/3453052/landing-pages";
+$hubspotPATH: "";
+
+@function hubspotCDN($filename) {
+  @return '#{$hubspotURL}/#{$hubspotPATH}/#{$filename}';
+}

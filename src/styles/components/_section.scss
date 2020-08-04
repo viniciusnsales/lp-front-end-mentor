@@ -1,0 +1,43 @@
+.section {
+  padding: 80px 0;
+
+  .title {
+    font-size: 36px;
+    color: $neutral800;
+  }
+
+  .sub-title {
+    font-size: 18px;
+    color: $neutral500;
+  }
+
+  &__hero {
+    background-color: $neutral100;
+
+    .container {
+      display: flex;
+    }
+
+    .hero__content {
+      width: 50%;
+    }
+
+    .hero__title {
+      color: $neutral800;
+      margin-bottom: 40px;
+    }
+
+    .hero__text {
+      color: $neutral500;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__features {
+    background-color: $neutral200;
+  }
+
+  &__articles {
+    background-color: $neutral100;
+  }
+}

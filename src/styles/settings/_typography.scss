@@ -1,0 +1,9 @@
+$icon: "superlogica";
+
+@include font-face(
+  $icon,
+  "/fonts/icons/superlogica",
+  normal,
+  normal,
+  woff woff2
+);
